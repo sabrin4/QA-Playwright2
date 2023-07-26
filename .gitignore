@@ -1,0 +1,26 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+
+HELP.md
+build/
+!**/src/main/**
+!**/src/test/**
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Gradle ###
+.gradle
+
+### Logs ###
+*.log
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+### Class files ###
+.Demo
