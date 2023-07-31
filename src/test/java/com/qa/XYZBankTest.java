@@ -2,6 +2,7 @@ package com.qa;
 
 import com.qa.parameters.LoginParams;
 import com.qa.testConfig.BaseTest;
+import io.qase.api.annotation.CaseId;
 import org.testng.annotations.Test;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
@@ -9,7 +10,8 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 public class XYZBankTest extends BaseTest {
 
     @Test(dataProvider = "validLoginParams", dataProviderClass = LoginParams.class)
-    void successLogin(String user, String mock) {
+    @CaseId(1)
+    void successLogin(String user) {
         assertThat(page).hasTitle("XYZ Bank");
         testingPage.customerLoginButton.click();
         assertThat(page).hasURL("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/customer");
