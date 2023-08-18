@@ -4,14 +4,14 @@ import org.testng.annotations.DataProvider;
 
 public class LoginParams {
     @DataProvider(name = "validLoginParams")
-    public Object [][] getValidLoginParams() {
-        return new Object[][]
+    public Object [] getValidLoginParams() {
+        return new Object[]
                 {
-                        {"1", null},
-                        {"2", null},
-                        {"3", null},
-                        {"4", null},
-                        {"5", null}
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5"
                 };
     }
 
